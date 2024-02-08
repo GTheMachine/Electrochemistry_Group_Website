@@ -1,0 +1,7 @@
+Set up style and structure similar to Landon's website on GitHub
+https://pokekid101.github.io/
+https://github.com/PokeKid101/PokeKid101.github.io
+
+GitHub is a good way to have a basic static website and can be updated easily
+However, GitHub doesn't support server-side programs or databases
+(Need to establish a webserver for server-side and database support)
