@@ -6,15 +6,24 @@ let mainNav_Links =
     ["index.html", 
      "mainPages/aboutPage.html",
      "index.html",
+     "index.html",
+     "index.html",
+     "index.html",
+     "index.html",
      "index.html"
 ];
 // List of all text displayed in navigation bar
 // Text alligns with links on href_Links
 let mainNav_DisplayText = 
     ["Home Page",
-     "About Us",
-     "Research",
-     "News"
+    "Research",
+    "Publications",
+     "News",
+     "Dr. Pavi",
+     "Graduate Students",
+     "Undergraduates Students",
+     "Alumni"
+     
 ];
 
 function updateNavBar(){
