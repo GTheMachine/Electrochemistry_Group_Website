@@ -4,24 +4,24 @@ let navigationBar = "navigationBar";
 // List of all pages on navigation bar
 let mainNav_Links = 
     ["index.html", 
-     "mainPages/aboutPage.html",
-     "index.html",
-     "index.html",
-     "index.html",
-     "index.html",
-     "index.html",
-     "index.html"
+     "mainPages/research.html",
+     "mainPages/publications.html",
+     "mainPages/news.html",
+     "mainPages/pavi.html",
+     "mainPages/gradStudents.html",
+     "mainPages/undergradStudents.html",
+     "mainPages/alumni.html"
 ];
 // List of all text displayed in navigation bar
 // Text alligns with links on href_Links
 let mainNav_DisplayText = 
-    ["Home Page",
-    "Research",
-    "Publications",
+    ["Home",
+     "Research",
+     "Publications",
      "News",
-     "Dr. Pavi",
-     "Graduate Students",
-     "Undergraduates Students",
+     "Pavi",
+     "Graduates",
+     "Undergraduates",
      "Alumni"
      
 ];

@@ -5,20 +5,22 @@ html{
 body{
     background-color: lightgoldenrodyellow;
     color: black;
-     font-family: 'Roboto';
+    font-family: 'Roboto';
     src: url('Roboto-ThinItalic-webfont.eot');
     src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
          url('Roboto-ThinItalic-webfont.woff') format('woff'),
          url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
-         url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); (under the Apache Software License). 
+         url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); /*(under the Apache Software License)*/ 
     font-weight: 200;
     font-size: 100%;
+    text-align: center;
 }
 h1{
     margin: 10px auto 5px auto;
 }
 p{
-    margin-right: 40%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 a{
     color: grey;
@@ -48,6 +50,8 @@ a:visited{
     border-style: solid;
     border-color: lightgray;
     padding: 5px 2px 5px 2px;
+    font-size: 150%;
+    text-align: center;
 }
 #navigationBar a{
     color: black;
@@ -66,6 +70,7 @@ a:visited{
     border-style: solid;
     border-color: lightgray;
     padding: 5px 2px 5px 2px;
+    text-align: center;
 }
 .subNavigation a{
     color: black;
