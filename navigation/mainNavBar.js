@@ -8,9 +8,7 @@ let mainNav_Links =
      "mainPages/publications.html",
      "mainPages/news.html",
      "mainPages/pavi.html",
-     "mainPages/gradStudents.html",
-     "mainPages/undergradStudents.html",
-     "mainPages/alumni.html"
+     "mainPages/gradStudents.html"
 ];
 // List of all text displayed in navigation bar
 // Text alligns with links on href_Links
@@ -20,9 +18,7 @@ let mainNav_DisplayText =
      "Publications",
      "News",
      "Pavi",
-     "Graduates",
-     "Undergraduates",
-     "Alumni"
+     "Students"
      
 ];
 
