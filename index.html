@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <title>Pavi ElectroChem - Home Page</title>
@@ -8,24 +7,26 @@
         <link rel="icon" type="image/x-icon" href="icon.jpg">
         <link rel="stylesheet" href="templates/mainStyle.css">
         <script src="navigation/mainNavBar.js"></script>
-
     </head>
     <body>
 
-        <div id="navigationBar"></div>
-
-        <div id="pageContent">
-            <h1>Pavi's Electrochemistry Website</h1>
-            <p>This is the home page.</p>
-            <p>man, this is a paragraph element huh</p>
-
-            <image src="icon.jpg" height="200px" alt="funny graph"/>
-            <p>Figure 1: This is a funny Graph</p>
-
-
+        <!-- Navigation Bar -->
+        <div id="navigationBar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
         </div>
-        
-        
+
+        <!-- Page Content -->
+        <div id="pageContent" class="center-content">
+            <h1>Pavi's Electrochemistry Website</h1>
+            <p>This is the home page where you can learn all about electrochemistry and explore research topics.</p>
+
+            <img src="icon.jpg" height="200px" alt="funny graph" class="center-image">
+            <p>Figure 1: This is a funny Graph</p>
+        </div>
+
+        <!-- JavaScript to update navigation -->
         <script>
             updateNavBarHome();
         </script>

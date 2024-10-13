@@ -4,7 +4,7 @@ let studentNavBar = "studentNavBar";
 // List of all pages on navigation bar
 let studentNav_Links = 
     ["mainPages/gradStudents.html",
-     "mainPages/undergradStudents.html",
+     "mainPages/undergraduates.html",
      "mainPages/alumni.html"
 ];
 // List of all text displayed in navigation bar

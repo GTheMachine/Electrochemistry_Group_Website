@@ -1,83 +1,92 @@
-html{
-    background-color: lightgoldenrodyellow;
-    color: black;
+:root {
+    /* CSS HEX */
+    --dark-purple: #3a3042ff;
+    --earth-yellow: #db9d47ff;
+    --coral: #ff784fff;
+    --peach-yellow: #ffe19cff;
+    --nyanza: #edffd9ff;
 }
-body{
-    background-color: lightgoldenrodyellow;
-    color: black;
-    font-family: 'Roboto';
-    src: url('Roboto-ThinItalic-webfont.eot');
-    src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Roboto-ThinItalic-webfont.woff') format('woff'),
-         url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
-         url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); /*(under the Apache Software License)*/ 
-    font-weight: 200;
-    font-size: 100%;
+
+/* Apply solid background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--nyanza); /* Solid background color */
+    color: var(--dark-purple);
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Navigation styles */
+#navigationBar {
+    background-color: var(--dark-purple);
+    padding: 10px;
+    text-align: center; /* Center navigation links */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Keep it on top */
+}
+
+#navigationBar a {
+    color: var(--nyanza);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#navigationBar a:hover {
+    color: var(--peach-yellow);
+}
+
+/* Sub-Navigation styles (e.g., Student buttons) */
+#studentNavBar {
+    margin-top: 45px; /* Give space below the main navigation bar */
     text-align: center;
+    padding: 10px 0;
+    /* Removed the background color */
 }
-h1{
-    margin: 10px auto 5px auto;
-}
-p{
-    margin-left: 20%;
-    margin-right: 20%;
-}
-a{
-    color: grey;
-    text-decoration: none;
-}
-a.inTextLink{
-    color: black;
-    text-decoration: none;
-}
-a:hover{
-    color: deepskyblue;
-    text-decoration: underline;
-}
-a:visited{
-    color: darkcyan;
+
+#studentNavBar a {
+    display: inline-block;
+    background-color: var(--earth-yellow);
+    color: var(--dark-purple);
+    margin: 5px 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
     text-decoration: none;
 }
 
-#pageContent{
-    margin-left: 1%;
+#studentNavBar a:hover {
+    background-color: var(--coral);
+    color: var(--nyanza);
 }
 
-#navigationBar{
-    background-color: lightyellow;
-    color: black;
-    margin: auto auto auto auto;
-    border-style: solid;
-    border-color: lightgray;
-    padding: 5px 2px 5px 2px;
-    font-size: 150%;
+/* Page content styling */
+#pageContent {
+    padding-top: 60px; /* Space for both navigation bars */
     text-align: center;
-}
-#navigationBar a{
-    color: black;
-    text-decoration: none;
-    padding: 0px 10px 0px 10px;
-}
-#navigationBar a:hover{
-    color: black;
-    background-color: lightblue;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
-.subNavigation{
-    background-color: lightgreen;
-    color: black;
-    margin: auto auto auto auto;
-    border-style: solid;
-    border-color: lightgray;
-    padding: 5px 2px 5px 2px;
-    text-align: center;
+/* Center image */
+.center-image {
+    margin: 20px auto;
+    display: block;
 }
-.subNavigation a{
-    color: black;
-    text-decoration: none;
-    padding: 0px 10px 0px 10px;
+
+/* Heading styles */
+h1 {
+    color: var(--coral);
+    font-size: 2.5em;
 }
-.subNavigation a:hover{
-    color: black;
-    background-color: lightblue;
+
+/* Paragraph styles */
+p {
+    color: var(--dark-purple);
+    font-size: 1.2em;
+    margin: 10px 0;
 }

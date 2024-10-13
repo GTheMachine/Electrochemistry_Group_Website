@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Pavi</title>
+        <title>Undergraduates</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="../icon.jpg">
         <link rel="stylesheet" href="../templates/mainStyle.css">
         <script src="../navigation/mainNavBar.js"></script>
+        <script src="../navigation/studentsNavBar.js"></script>
     </head>
     <body>
 
         <!-- Navigation Bar -->
-        <div id="navigationBar"></div>
+        <div id="navigationBar">
+            <a href="graduates.html">Graduates</a>
+            <a href="undergraduates.html">Undergraduates</a>
+            <a href="alumni.html">Alumni</a>
+        </div>
+
+        <!-- Student Sub Navigation -->
+        <div id="studentNavBar" class="subNavigation"></div>
 
         <!-- Page Content -->
         <div id="pageContent">
-            <h1>Dr. Pavi</h1>
+            <h1>Undergraduates</h1>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor...</p>
         </div>
 
         <!-- JavaScript to update navigation -->
         <script>
             updateNavBar();
+            updateStudentNavBar();
         </script>
     </body>
 </html>
