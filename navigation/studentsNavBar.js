@@ -21,8 +21,15 @@ function updateStudentNavBar(){
     let hrefLinks = studentNav_Links;
     let displayText = studentNav_DisplayText;
     
+    // Get current page path to highlight active link
+    let currentPath = window.location.pathname;
+    
     for(var i = 0; i < hrefLinks.length; i++){
-        navHTML = navHTML + "<a href='../" + hrefLinks[i] + "'>" + displayText[i] + "</a>";
+        // Check if this link matches current page
+        let isActive = currentPath.endsWith(hrefLinks[i]);
+        let activeClass = isActive ? " class='active'" : "";
+        
+        navHTML = navHTML + "<a href='../" + hrefLinks[i] + "'" + activeClass + ">" + displayText[i] + "</a>";
     }
     navHTML = navHTML + "</nav>";
     navElement.innerHTML = navHTML;   
@@ -34,8 +41,15 @@ function updateStudentNavBarHome(){
     let hrefLinks = studentNav_Links;
     let displayText = studentNav_DisplayText;
     
+    // Get current page path to highlight active link
+    let currentPath = window.location.pathname;
+    
     for(var i = 0; i < hrefLinks.length; i++){
-        navHTML = navHTML + "<a href='" + hrefLinks[i] + "'>" + displayText[i] + "</a>";
+        // Check if this link matches current page
+        let isActive = currentPath.endsWith(hrefLinks[i]);
+        let activeClass = isActive ? " class='active'" : "";
+        
+        navHTML = navHTML + "<a href='" + hrefLinks[i] + "'" + activeClass + ">" + displayText[i] + "</a>";
     }
     navHTML = navHTML + "</nav>";
     navElement.innerHTML = navHTML;   
