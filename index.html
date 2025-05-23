@@ -1,35 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Pavi ElectroChem - Home Page</title>
+        <title>Pavi ElectroChem - Electrochemistry Research Group</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Pioneering electrochemistry research for sustainable energy solutions">
+        
+        <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="icon.jpg">
+        
+        <!-- Stylesheets -->
         <link rel="stylesheet" href="templates/mainStyle.css">
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+        <!-- JavaScript -->
         <script src="navigation/mainNavBar.js"></script>
     </head>
     <body>
+        <!-- Main Navigation Bar -->
+        <div id="navigationBar"></div>
 
-        <!-- Navigation Bar -->
-        <div id="navigationBar">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+        <!-- Hero Section -->
+        <div id="pageContent">
+            <div class="hero-section fade-in">
+                <h1>Pavi's Electrochemistry Research Group</h1>
+                <p>Pioneering research in electrochemical systems for energy conversion and storage</p>
+                <div class="mt-4">
+                    <a href="mainPages/research.html" class="btn btn-primary">Our Research</a>
+                    <a href="mainPages/publications.html" class="btn btn-outline ml-3">Publications</a>
+                </div>
+            </div>
+            
+            <div class="container">
+                <!-- Featured Research -->
+                <h2 class="text-center mb-4 fade-in delay-1">Featured Research</h2>
+                
+                <div class="row fade-in delay-2">
+                    <div class="column">
+                        <div class="card">
+                            <img src="icon.jpg" class="card-image" alt="Research Image">
+                            <div class="card-content">
+                                <h3>Energy Storage</h3>
+                                <p>Developing next-generation batteries and supercapacitors with improved performance.</p>
+                                <a href="mainPages/research.html" class="btn btn-secondary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="card">
+                            <img src="icon.jpg" class="card-image" alt="Research Image">
+                            <div class="card-content">
+                                <h3>Electrocatalysis</h3>
+                                <p>Investigating novel catalysts for efficient energy conversion processes.</p>
+                                <a href="mainPages/research.html" class="btn btn-secondary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="card">
+                            <img src="icon.jpg" class="card-image" alt="Research Image">
+                            <div class="card-content">
+                                <h3>Sustainable Materials</h3>
+                                <p>Creating eco-friendly materials for electrochemical applications.</p>
+                                <a href="mainPages/research.html" class="btn btn-secondary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Latest News Section -->
+                <h2 class="text-center mb-4 mt-5 fade-in delay-1">Latest News</h2>
+                
+                <div class="row fade-in delay-2">
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-content">
+                                <h3>New Publication in Nature</h3>
+                                <p>Our team's latest research on novel electrode materials has been published in Nature.</p>
+                                <p class="text-muted"><i class="fas fa-calendar-alt"></i> April 1, 2025</p>
+                                <a href="mainPages/news.html" class="btn btn-outline">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-content">
+                                <h3>Research Grant Awarded</h3>
+                                <p>We've received a significant grant to further our work on sustainable energy solutions.</p>
+                                <p class="text-muted"><i class="fas fa-calendar-alt"></i> March 15, 2025</p>
+                                <a href="mainPages/news.html" class="btn btn-outline">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Page Content -->
-        <div id="pageContent" class="center-content">
-            <h1>Pavi's Electrochemistry Website</h1>
-            <p>This is the home page where you can learn all about electrochemistry and explore research topics.</p>
-
-            <img src="icon.jpg" height="200px" alt="funny graph" class="center-image">
-            <p>Figure 1: This is a funny Graph</p>
-        </div>
-
-        <!-- JavaScript to update navigation -->
+        
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>Our electrochemistry research group focuses on developing innovative solutions for energy storage and conversion technologies.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                        <a href="mainPages/research.html"><i class="fas fa-flask"></i> Research</a>
+                        <a href="mainPages/publications.html"><i class="fas fa-book"></i> Publications</a>
+                        <a href="mainPages/news.html"><i class="fas fa-newspaper"></i> News</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> Email: info@electrochemlab.org</p>
+                    <p><i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Location: Science Building, Room 123</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Electrochemistry Research Group. All rights reserved.</p>
+            </div>
+        </footer>
+        
         <script>
             updateNavBarHome();
         </script>
-        
     </body>
 </html>

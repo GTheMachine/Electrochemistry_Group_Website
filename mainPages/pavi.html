@@ -1,25 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Pavi</title>
+        <title>Dr. Pavi | Electrochemistry Research Group</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Principal Investigator - Dr. Pavi">
+        
+        <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="../icon.jpg">
+        
+        <!-- Stylesheets -->
         <link rel="stylesheet" href="../templates/mainStyle.css">
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+        <!-- JavaScript -->
         <script src="../navigation/mainNavBar.js"></script>
     </head>
     <body>
-
-        <!-- Navigation Bar -->
+        <!-- Main Navigation Bar -->
         <div id="navigationBar"></div>
 
         <!-- Page Content -->
         <div id="pageContent">
-            <h1>Dr. Pavi</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor...</p>
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <img src="../icon.jpg" alt="Dr. Pavi" class="center-image fade-in" style="border-radius: 50%; max-width: 300px;">
+                    </div>
+                    
+                    <div class="column">
+                        <h1 class="fade-in">Dr. Pavi</h1>
+                        <h3 class="fade-in delay-1 mb-3">Principal Investigator</h3>
+                        
+                        <div class="fade-in delay-1">
+                            <p><i class="fas fa-envelope"></i> Email: pavi@electrochemlab.org</p>
+                            <p><i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
+                            <p><i class="fas fa-building"></i> Office: Science Building, Room 123</p>
+                            
+                            <div class="mt-4">
+                                <a href="#" class="btn btn-outline"><i class="fas fa-file-pdf"></i> Download CV</a>
+                                <a href="#" class="btn btn-outline"><i class="fab fa-google"></i> Google Scholar</a>
+                                <a href="#" class="btn btn-outline"><i class="fab fa-orcid"></i> ORCID</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fade-in delay-2 mt-5">
+                    <h2>Biography</h2>
+                    <p>Dr. Pavi is a renowned expert in electrochemistry with over 15 years of research experience. Their work focuses on developing novel materials and approaches for energy storage and conversion applications.</p>
+                    
+                    <p>Dr. Pavi received their Ph.D. in Physical Chemistry from MIT in 2010, followed by postdoctoral research at Stanford University. Prior to establishing the Electrochemistry Research Group, they worked as a research scientist at the National Renewable Energy Laboratory.</p>
+                    
+                    <p>Their research has been recognized with numerous awards, including the Presidential Early Career Award for Scientists and Engineers and the Electrochemical Society Young Investigator Award.</p>
+                </div>
+                
+                <div class="fade-in delay-3 mt-5">
+                    <h2>Research Interests</h2>
+                    <ul>
+                        <li>Next-generation batteries and supercapacitors</li>
+                        <li>Electrocatalysis for energy conversion</li>
+                        <li>In-situ/operando characterization of electrochemical interfaces</li>
+                        <li>Sustainable materials for electrochemical applications</li>
+                        <li>Computational modeling of electrochemical processes</li>
+                    </ul>
+                </div>
+                
+                <div class="fade-in delay-3 mt-5">
+                    <h2>Selected Publications</h2>
+                    <div class="card mb-3">
+                        <div class="card-content">
+                            <p class="publication-title">"Novel Nanostructured Electrodes for High-Performance Lithium-Ion Batteries"</p>
+                            <p class="publication-authors">P. Smith, J. Chen, M. Johnson, <strong>P. Doe</strong>, et al.</p>
+                            <p class="publication-info">Advanced Energy Materials, 2025</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-3">
+                        <div class="card-content">
+                            <p class="publication-title">"Single-Atom Catalysts for Efficient Hydrogen Evolution Reaction"</p>
+                            <p class="publication-authors">L. Wang, <strong>P. Doe</strong>, S. Miller, K. Zhang, et al.</p>
+                            <p class="publication-info">Nature Communications, 2024</p>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-4">
+                        <a href="publications.html" class="btn btn-primary">View All Publications</a>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- JavaScript to update navigation -->
+        
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>Our electrochemistry research group focuses on developing innovative solutions for energy storage and conversion technologies.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+                        <a href="research.html"><i class="fas fa-flask"></i> Research</a>
+                        <a href="publications.html"><i class="fas fa-book"></i> Publications</a>
+                        <a href="news.html"><i class="fas fa-newspaper"></i> News</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> Email: info@electrochemlab.org</p>
+                    <p><i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Location: Science Building, Room 123</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Electrochemistry Research Group. All rights reserved.</p>
+            </div>
+        </footer>
+        
         <script>
             updateNavBar();
         </script>

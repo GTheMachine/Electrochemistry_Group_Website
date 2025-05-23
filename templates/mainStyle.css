@@ -1,92 +1,443 @@
+/* filepath: /home/zany/gene-random-projects/Electrochemistry_Group_Website/templates/mainStyle.css */
 :root {
-    /* CSS HEX */
-    --dark-purple: #3a3042ff;
-    --earth-yellow: #db9d47ff;
-    --coral: #ff784fff;
-    --peach-yellow: #ffe19cff;
-    --nyanza: #edffd9ff;
+    /* Modern science-inspired color palette */
+    --primary: #1a5276;       /* Deep blue */
+    --secondary: #2ecc71;     /* Vibrant green */
+    --accent: #e74c3c;        /* Bright red/orange */
+    --light: #ecf0f1;         /* Light gray with blue tint */
+    --dark: #2c3e50;          /* Dark blue-gray */
+    --gray: #7f8c8d;          /* Medium gray */
+    --light-bg: #f8f9fa;      /* Very light background */
 }
 
-/* Apply solid background color */
+/* Base HTML elements */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: var(--nyanza); /* Solid background color */
-    color: var(--dark-purple);
+    font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--dark);
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
-/* Main Navigation styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    font-weight: 600;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    color: var(--primary);
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+h1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--secondary);
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary);
+}
+
+/* Layout Components */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.column {
+    flex: 1;
+    padding: 0 15px;
+    min-width: 300px;
+}
+
+/* Header and Navigation */
 #navigationBar {
-    background-color: var(--dark-purple);
-    padding: 10px;
-    text-align: center; /* Center navigation links */
+    background-color: var(--primary);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000; /* Keep it on top */
+    z-index: 1000;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+#navigationBar nav {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
 }
 
 #navigationBar a {
-    color: var(--nyanza);
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
+    color: var(--light);
+    padding: 20px 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+    position: relative;
+    transition: all 0.3s ease;
 }
 
 #navigationBar a:hover {
-    color: var(--peach-yellow);
+    color: var(--secondary);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Sub-Navigation styles (e.g., Student buttons) */
-#studentNavBar {
-    margin-top: 45px; /* Give space below the main navigation bar */
-    text-align: center;
+#navigationBar a.active {
+    color: var(--secondary);
+}
+
+#navigationBar a.active:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--secondary);
+}
+
+/* Logo styling */
+.site-logo {
+    display: flex;
+    align-items: center;
     padding: 10px 0;
-    /* Removed the background color */
+}
+
+.site-logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.site-logo h2 {
+    color: var(--primary);
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Sub Navigation */
+#studentNavBar {
+    background: linear-gradient(to right, rgba(26, 82, 118, 0.05), rgba(26, 82, 118, 0.1), rgba(26, 82, 118, 0.05));
+    margin-top: 60px;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(26, 82, 118, 0.1);
 }
 
 #studentNavBar a {
     display: inline-block;
-    background-color: var(--earth-yellow);
-    color: var(--dark-purple);
-    margin: 5px 10px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1em;
-    font-weight: bold;
-    text-decoration: none;
+    margin: 0 5px;
+    padding: 8px 16px;
+    border-radius: 30px;
+    color: var(--dark);
+    background-color: var(--light);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    font-weight: 500;
 }
 
 #studentNavBar a:hover {
-    background-color: var(--coral);
-    color: var(--nyanza);
+    background-color: var(--secondary);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Page content styling */
+#studentNavBar a.active {
+    background-color: var(--secondary);
+    color: white;
+}
+
+/* Page Content */
 #pageContent {
-    padding-top: 60px; /* Space for both navigation bars */
-    text-align: center;
+    padding: 100px 20px 40px;
+    max-width: 1000px;
     margin: 0 auto;
+    min-height: calc(100vh - 200px);
+}
+
+.with-subnav {
+    padding-top: 140px !important;
+}
+
+/* Homepage specific styles */
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, rgba(26, 82, 118, 0.1) 0%, rgba(46, 204, 113, 0.1) 100%);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.3rem;
     max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+/* Cards for research topics, publications, etc */
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
 }
 
 /* Center image */
 .center-image {
-    margin: 20px auto;
     display: block;
+    margin: 30px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Heading styles */
-h1 {
-    color: var(--coral);
-    font-size: 2.5em;
+/* Figure caption */
+.figure-caption {
+    text-align: center;
+    color: var(--gray);
+    font-style: italic;
+    margin-top: -20px;
+    margin-bottom: 30px;
 }
 
-/* Paragraph styles */
-p {
-    color: var(--dark-purple);
-    font-size: 1.2em;
-    margin: 10px 0;
+/* Footer */
+footer {
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 40px 0 20px;
+    margin-top: 60px;
 }
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.footer-column h3 {
+    color: var(--light);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-column h3:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: var(--secondary);
+}
+
+.footer-column p {
+    color: var(--light);
+    opacity: 0.8;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    display: block;
+    color: var(--light);
+    opacity: 0.8;
+    text-decoration: none;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    transition: opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    color: var(--secondary);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--light);
+    opacity: 0.6;
+    font-size: 0.9rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #navigationBar {
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+    
+    #navigationBar a {
+        padding: 15px 10px;
+        font-size: 0.8rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+    
+    #pageContent {
+        padding: 80px 15px 30px;
+    }
+    
+    .with-subnav {
+        padding-top: 120px !important;
+    }
+}
+
+/* Animation effects */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+
+/* Custom button styles */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: var(--secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* Utility classes */
+.text-center { text-align: center; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+.mb-5 { margin-bottom: 3rem; }
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+.mt-5 { margin-top: 3rem; }

@@ -1,33 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Graduate Students</title>
+        <title>Graduate Students | Electrochemistry Research Group</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Meet our graduate student researchers">
+        
+        <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="../icon.jpg">
+        
+        <!-- Stylesheets -->
         <link rel="stylesheet" href="../templates/mainStyle.css">
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+        <!-- JavaScript -->
         <script src="../navigation/mainNavBar.js"></script>
         <script src="../navigation/studentsNavBar.js"></script>
     </head>
     <body>
-
-        <!-- Navigation Bar -->
-        <div id="navigationBar">
-            <a href="graduates.html">Graduates</a>
-            <a href="undergraduates.html">Undergraduates</a>
-            <a href="alumni.html">Alumni</a>
-        </div>
+        <!-- Main Navigation Bar -->
+        <div id="navigationBar"></div>
         
         <!-- Student Sub Navigation -->
         <div id="studentNavBar" class="subNavigation"></div>
 
         <!-- Page Content -->
-        <div id="pageContent">
-            <h1>Graduate Students</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor...</p>
+        <div id="pageContent" class="with-subnav">
+            <div class="container">
+                <h1 class="fade-in">Graduate Students</h1>
+                
+                <div class="fade-in delay-1">
+                    <p class="text-center mb-5">Our lab is home to talented graduate students working on cutting-edge electrochemistry research projects.</p>
+                    
+                    <!-- Student 1 -->
+                    <div class="row mb-5">
+                        <div class="column">
+                            <img src="../icon.jpg" alt="Emily Chen" class="center-image" style="border-radius: 8px; max-width: 250px;">
+                        </div>
+                        <div class="column">
+                            <h2>Emily Chen</h2>
+                            <p><strong>Ph.D. Candidate (2022-present)</strong></p>
+                            <p><i class="fas fa-envelope"></i> emily.chen@electrochemlab.org</p>
+                            <p>Emily's research focuses on developing novel electrocatalysts for CO₂ reduction. She uses in-situ spectroscopic techniques to understand reaction mechanisms at the electrode-electrolyte interface.</p>
+                            <p><strong>Research Interests:</strong> Electrocatalysis, CO₂ reduction, in-situ characterization</p>
+                            <div class="mt-3">
+                                <a href="#" class="btn btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                                <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Student 2 -->
+                    <div class="row mb-5 fade-in delay-2">
+                        <div class="column">
+                            <img src="../icon.jpg" alt="Michael Rodriguez" class="center-image" style="border-radius: 8px; max-width: 250px;">
+                        </div>
+                        <div class="column">
+                            <h2>Michael Rodriguez</h2>
+                            <p><strong>Ph.D. Candidate (2021-present)</strong></p>
+                            <p><i class="fas fa-envelope"></i> michael.rodriguez@electrochemlab.org</p>
+                            <p>Michael is investigating solid-state electrolytes for next-generation lithium batteries. His work combines materials synthesis, electrochemical characterization, and computational modeling.</p>
+                            <p><strong>Research Interests:</strong> Solid-state batteries, ionic conductors, materials modeling</p>
+                            <div class="mt-3">
+                                <a href="#" class="btn btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                                <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Student 3 -->
+                    <div class="row mb-5 fade-in delay-3">
+                        <div class="column">
+                            <img src="../icon.jpg" alt="Sarah Johnson" class="center-image" style="border-radius: 8px; max-width: 250px;">
+                        </div>
+                        <div class="column">
+                            <h2>Sarah Johnson</h2>
+                            <p><strong>Ph.D. Student (2023-present)</strong></p>
+                            <p><i class="fas fa-envelope"></i> sarah.johnson@electrochemlab.org</p>
+                            <p>Sarah is working on bio-derived carbon materials for supercapacitors. Her research aims to develop sustainable energy storage solutions using waste biomass as precursors.</p>
+                            <p><strong>Research Interests:</strong> Sustainable materials, supercapacitors, biomass conversion</p>
+                            <div class="mt-3">
+                                <a href="#" class="btn btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                                <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Join Us Box -->
+                    <div class="card mt-5 fade-in delay-3">
+                        <div class="card-content text-center">
+                            <h2>Join Our Team</h2>
+                            <p>We are always looking for talented and motivated graduate students to join our research group.</p>
+                            <p>If you are interested in working at the frontier of electrochemistry research, please send your CV and research interests to Dr. Pavi.</p>
+                            <a href="#" class="btn btn-primary mt-3">How to Apply</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- JavaScript to update navigation -->
+        
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>Our electrochemistry research group focuses on developing innovative solutions for energy storage and conversion technologies.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+                        <a href="research.html"><i class="fas fa-flask"></i> Research</a>
+                        <a href="publications.html"><i class="fas fa-book"></i> Publications</a>
+                        <a href="news.html"><i class="fas fa-newspaper"></i> News</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> Email: info@electrochemlab.org</p>
+                    <p><i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Location: Science Building, Room 123</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Electrochemistry Research Group. All rights reserved.</p>
+            </div>
+        </footer>
+        
         <script>
             updateNavBar();
             updateStudentNavBar();

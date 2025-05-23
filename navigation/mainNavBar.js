@@ -11,15 +11,14 @@ let mainNav_Links =
      "mainPages/gradStudents.html"
 ];
 // List of all text displayed in navigation bar
-// Text alligns with links on href_Links
+// Text aligns with links on href_Links
 let mainNav_DisplayText = 
     ["Home",
      "Research",
      "Publications",
      "News",
-     "Pavi",
+     "Dr. Pavi",
      "Students"
-     
 ];
 
 function updateNavBar(){
@@ -28,8 +27,15 @@ function updateNavBar(){
     let hrefLinks = mainNav_Links;
     let displayText = mainNav_DisplayText;
     
+    // Get current page path to highlight active link
+    let currentPath = window.location.pathname;
+    
     for(var i = 0; i < hrefLinks.length; i++){
-        navHTML = navHTML + "<a href='../" + hrefLinks[i] + "'>" + displayText[i] + "</a>";
+        // Check if this link matches current page
+        let isActive = currentPath.endsWith(hrefLinks[i]);
+        let activeClass = isActive ? " class='active'" : "";
+        
+        navHTML = navHTML + "<a href='../" + hrefLinks[i] + "'" + activeClass + ">" + displayText[i] + "</a>";
     }
     navHTML = navHTML + "</nav>";
     navElement.innerHTML = navHTML;   
@@ -41,8 +47,16 @@ function updateNavBarHome(){
     let hrefLinks = mainNav_Links;
     let displayText = mainNav_DisplayText;
     
+    // Get current page path to highlight active link
+    let currentPath = window.location.pathname;
+    
     for(var i = 0; i < hrefLinks.length; i++){
-        navHTML = navHTML + "<a href='" + hrefLinks[i] + "'>" + displayText[i] + "</a>";
+        // Check if this link matches current page (for home page)
+        let isActive = (i === 0 && (currentPath.endsWith('/') || currentPath.endsWith('index.html'))) 
+                      || currentPath.endsWith(hrefLinks[i]);
+        let activeClass = isActive ? " class='active'" : "";
+        
+        navHTML = navHTML + "<a href='" + hrefLinks[i] + "'" + activeClass + ">" + displayText[i] + "</a>";
     }
     navHTML = navHTML + "</nav>";
     navElement.innerHTML = navHTML;   

@@ -1,33 +1,206 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Undergraduates</title>
+        <title>Undergraduates | Electrochemistry Research Group</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Undergraduate researchers in our electrochemistry group">
+        
+        <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="../icon.jpg">
+        
+        <!-- Stylesheets -->
         <link rel="stylesheet" href="../templates/mainStyle.css">
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+        <!-- JavaScript -->
         <script src="../navigation/mainNavBar.js"></script>
         <script src="../navigation/studentsNavBar.js"></script>
     </head>
     <body>
-
-        <!-- Navigation Bar -->
-        <div id="navigationBar">
-            <a href="graduates.html">Graduates</a>
-            <a href="undergraduates.html">Undergraduates</a>
-            <a href="alumni.html">Alumni</a>
-        </div>
-
+        <!-- Main Navigation Bar -->
+        <div id="navigationBar"></div>
+        
         <!-- Student Sub Navigation -->
         <div id="studentNavBar" class="subNavigation"></div>
 
         <!-- Page Content -->
-        <div id="pageContent">
-            <h1>Undergraduates</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor...</p>
+        <div id="pageContent" class="with-subnav">
+            <div class="container">
+                <h1 class="fade-in">Undergraduate Researchers</h1>
+                
+                <div class="fade-in delay-1">
+                    <p class="text-center mb-5">Our lab provides hands-on research opportunities for talented undergraduate students interested in electrochemistry and energy technologies.</p>
+                    
+                    <!-- Current Undergrads Section -->
+                    <h2 class="text-center mb-4">Current Undergraduate Researchers</h2>
+                    
+                    <div class="row mb-5">
+                        <!-- Undergrad 1 -->
+                        <div class="column">
+                            <div class="card">
+                                <div class="card-content text-center">
+                                    <img src="../icon.jpg" alt="Jason Lee" class="center-image" style="border-radius: 8px; max-width: 200px;">
+                                    <h3>Jason Lee</h3>
+                                    <p><strong>Senior, Chemical Engineering</strong></p>
+                                    <p>Research Project: "Synthesis and Characterization of Metal Oxide Catalysts for Oxygen Evolution Reaction"</p>
+                                    <p>Mentor: Michael Rodriguez (PhD Candidate)</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Undergrad 2 -->
+                        <div class="column">
+                            <div class="card">
+                                <div class="card-content text-center">
+                                    <img src="../icon.jpg" alt="Aisha Patel" class="center-image" style="border-radius: 8px; max-width: 200px;">
+                                    <h3>Aisha Patel</h3>
+                                    <p><strong>Junior, Materials Science</strong></p>
+                                    <p>Research Project: "Bio-derived Carbon Materials for Supercapacitor Applications"</p>
+                                    <p>Mentor: Sarah Johnson (PhD Student)</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Undergrad 3 -->
+                        <div class="column">
+                            <div class="card">
+                                <div class="card-content text-center">
+                                    <img src="../icon.jpg" alt="Marcus Rodriguez" class="center-image" style="border-radius: 8px; max-width: 200px;">
+                                    <h3>Marcus Rodriguez</h3>
+                                    <p><strong>Sophomore, Chemistry</strong></p>
+                                    <p>Research Project: "Computational Modeling of Electrolyte-Electrode Interfaces"</p>
+                                    <p>Mentor: Emily Chen (PhD Candidate)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Honors & Awards -->
+                    <div class="fade-in delay-2">
+                        <h2 class="text-center mb-4 mt-5">Undergraduate Achievements</h2>
+                        
+                        <div class="card mb-4">
+                            <div class="card-content">
+                                <h3><i class="fas fa-award"></i> Recent Honors & Awards</h3>
+                                <ul>
+                                    <li><strong>Jason Lee</strong> received the Department of Energy Undergraduate Research Award (2024)</li>
+                                    <li><strong>Aisha Patel</strong> won Best Poster at the Regional Materials Research Symposium (2024)</li>
+                                    <li><strong>Marcus Rodriguez</strong> received the University Excellence in Undergraduate Research Scholarship (2023)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-4">
+                            <div class="card-content">
+                                <h3><i class="fas fa-newspaper"></i> Recent Publications with Undergraduate Co-authors</h3>
+                                <ul>
+                                    <li>Lee, J., Rodriguez, M., & Doe, P. (2024). "Enhanced Oxygen Evolution Activity of Perovskite Oxides." Journal of Materials Chemistry A.</li>
+                                    <li>Patel, A., Johnson, S., & Doe, P. (2023). "Sustainable Carbon Materials from Biomass for Energy Storage." ACS Sustainable Chemistry & Engineering.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Opportunities Section -->
+                    <div class="fade-in delay-3 mt-5">
+                        <h2 class="text-center mb-4">Research Opportunities</h2>
+                        
+                        <div class="row">
+                            <div class="column">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <h3><i class="fas fa-flask"></i> Available Projects</h3>
+                                        <ul>
+                                            <li>Synthesis of novel electrode materials for Li-ion batteries</li>
+                                            <li>Electrochemical characterization of catalysts for CO₂ reduction</li>
+                                            <li>Computational modeling of ion transport in solid-state electrolytes</li>
+                                            <li>Development of sustainable materials for supercapacitors</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="column">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <h3><i class="fas fa-file-alt"></i> How to Apply</h3>
+                                        <p>Undergraduate research positions are available for students interested in electrochemistry and energy technologies. We accept applications throughout the year.</p>
+                                        <ol>
+                                            <li>Review our research areas and available projects</li>
+                                            <li>Prepare your resume/CV and transcript</li>
+                                            <li>Write a brief statement of interest (1 page max)</li>
+                                            <li>Submit your application via the online form</li>
+                                        </ol>
+                                        <div class="text-center mt-4">
+                                            <a href="#" class="btn btn-primary">Apply Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonials -->
+                    <div class="fade-in delay-3 mt-5">
+                        <h2 class="text-center mb-4">Student Testimonials</h2>
+                        
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="row">
+                                    <div class="column" style="flex: 1;">
+                                        <img src="../icon.jpg" alt="Emma Johnson" class="center-image" style="border-radius: 50%; width: 150px; height: 150px;">
+                                    </div>
+                                    <div class="column" style="flex: 3;">
+                                        <p style="font-style: italic;">"My undergraduate research experience in the Electrochemistry Group was transformative. The hands-on training and mentorship helped me develop critical thinking and practical skills that prepared me for graduate school. The supportive lab environment made it easy to learn and grow as a scientist."</p>
+                                        <p><strong>- Emma Johnson, BS '23</strong><br>Now PhD Student at Stanford University</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- JavaScript to update navigation -->
+        
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>Our electrochemistry research group focuses on developing innovative solutions for energy storage and conversion technologies.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+                        <a href="research.html"><i class="fas fa-flask"></i> Research</a>
+                        <a href="publications.html"><i class="fas fa-book"></i> Publications</a>
+                        <a href="news.html"><i class="fas fa-newspaper"></i> News</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> Email: info@electrochemlab.org</p>
+                    <p><i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Location: Science Building, Room 123</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Electrochemistry Research Group. All rights reserved.</p>
+            </div>
+        </footer>
+        
         <script>
             updateNavBar();
             updateStudentNavBar();

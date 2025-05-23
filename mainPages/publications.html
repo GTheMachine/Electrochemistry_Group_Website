@@ -1,25 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Publications</title>
+        <title>Publications | Electrochemistry Research Group</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Research publications from our electrochemistry group">
+        
+        <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="../icon.jpg">
+        
+        <!-- Stylesheets -->
         <link rel="stylesheet" href="../templates/mainStyle.css">
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+        <!-- JavaScript -->
         <script src="../navigation/mainNavBar.js"></script>
     </head>
     <body>
-
-        <!-- Navigation Bar -->
+        <!-- Main Navigation Bar -->
         <div id="navigationBar"></div>
 
         <!-- Page Content -->
         <div id="pageContent">
-            <h1>Publications</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor...</p>
+            <div class="container">
+                <h1 class="fade-in">Publications</h1>
+                
+                <div class="fade-in delay-1">
+                    <p class="mb-4">Our research group has published extensively in high-impact scientific journals. Below is a selection of our recent publications.</p>
+                    
+                    <!-- Publication Filters -->
+                    <div class="mb-4">
+                        <h3>Filter by Topic:</h3>
+                        <div class="mb-3">
+                            <a href="#" class="btn btn-outline active">All Publications</a>
+                            <a href="#" class="btn btn-outline">Energy Storage</a>
+                            <a href="#" class="btn btn-outline">Electrocatalysis</a>
+                            <a href="#" class="btn btn-outline">Sustainable Materials</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Publication List -->
+                    <div class="card mb-4 fade-in delay-1">
+                        <div class="card-content">
+                            <h3>Advanced Energy Materials</h3>
+                            <p class="publication-title">"Novel Nanostructured Electrodes for High-Performance Lithium-Ion Batteries"</p>
+                            <p class="publication-authors">P. Smith, J. Chen, M. Johnson, <strong>P. Doe</strong>, et al.</p>
+                            <p class="publication-info"><i class="fas fa-journal-whills"></i> Advanced Energy Materials, 2025, DOI: 10.1002/aenm.202500123</p>
+                            <div class="publication-links mt-3">
+                                <a href="#" class="btn btn-outline"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="#" class="btn btn-outline"><i class="fas fa-link"></i> Publisher Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-4 fade-in delay-2">
+                        <div class="card-content">
+                            <h3>Nature Communications</h3>
+                            <p class="publication-title">"Single-Atom Catalysts for Efficient Hydrogen Evolution Reaction"</p>
+                            <p class="publication-authors">L. Wang, <strong>P. Doe</strong>, S. Miller, K. Zhang, et al.</p>
+                            <p class="publication-info"><i class="fas fa-journal-whills"></i> Nature Communications, 2024, DOI: 10.1038/s41467-024-98765-4</p>
+                            <div class="publication-links mt-3">
+                                <a href="#" class="btn btn-outline"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="#" class="btn btn-outline"><i class="fas fa-link"></i> Publisher Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-4 fade-in delay-2">
+                        <div class="card-content">
+                            <h3>Journal of the American Chemical Society</h3>
+                            <p class="publication-title">"Mechanistic Insights into Electrochemical CO₂ Reduction on Copper-Based Catalysts"</p>
+                            <p class="publication-authors"><strong>P. Doe</strong>, R. Lopez, T. Garcia, H. Kim, et al.</p>
+                            <p class="publication-info"><i class="fas fa-journal-whills"></i> J. Am. Chem. Soc., 2024, DOI: 10.1021/jacs.4b01234</p>
+                            <div class="publication-links mt-3">
+                                <a href="#" class="btn btn-outline"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="#" class="btn btn-outline"><i class="fas fa-link"></i> Publisher Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-4 fade-in delay-3">
+                        <div class="card-content">
+                            <h3>ACS Sustainable Chemistry & Engineering</h3>
+                            <p class="publication-title">"Bio-Derived Carbon Materials for Sustainable Energy Storage"</p>
+                            <p class="publication-authors">J. Roberts, <strong>P. Doe</strong>, A. Patel, et al.</p>
+                            <p class="publication-info"><i class="fas fa-journal-whills"></i> ACS Sustainable Chem. Eng., 2023, DOI: 10.1021/acssuschemeng.3c00987</p>
+                            <div class="publication-links mt-3">
+                                <a href="#" class="btn btn-outline"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="#" class="btn btn-outline"><i class="fas fa-link"></i> Publisher Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <div class="text-center mt-4 fade-in delay-3">
+                        <a href="#" class="btn btn-outline">Previous</a>
+                        <a href="#" class="btn btn-primary">1</a>
+                        <a href="#" class="btn btn-outline">2</a>
+                        <a href="#" class="btn btn-outline">3</a>
+                        <a href="#" class="btn btn-outline">Next</a>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- JavaScript to update navigation -->
+        
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>Our electrochemistry research group focuses on developing innovative solutions for energy storage and conversion technologies.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+                        <a href="research.html"><i class="fas fa-flask"></i> Research</a>
+                        <a href="publications.html"><i class="fas fa-book"></i> Publications</a>
+                        <a href="news.html"><i class="fas fa-newspaper"></i> News</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> Email: info@electrochemlab.org</p>
+                    <p><i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Location: Science Building, Room 123</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Electrochemistry Research Group. All rights reserved.</p>
+            </div>
+        </footer>
+        
         <script>
             updateNavBar();
         </script>
